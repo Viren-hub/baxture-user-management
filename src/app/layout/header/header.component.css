@@ -1,0 +1,12 @@
+.header{
+    width: 95%;
+    margin: auto;
+    padding: 1rem 1rem;
+    border: 1px solid #a2580b;
+    border-radius: 0px 0px 5px 5px;
+    color: #fff;
+}
+.header h3,p{
+    color: #a2580b;
+    /* padding: 2px 0px; */
+}

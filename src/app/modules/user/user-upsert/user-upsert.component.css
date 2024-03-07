@@ -1,0 +1,54 @@
+.all-users{
+    width: 90%;
+    margin: auto;
+}
+.view-all{
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 0px;
+}
+.user-upsert{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 2rem 0px;
+}
+.form-container{
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.user-upsert input{
+    display: block;
+    padding: 0.5rem;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 10px;
+    border: 1px solid #a2580b;
+    border-radius: 4px;
+}
+.user-upsert button{
+    padding: 0.5rem 2rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+    border: 1px solid #a2580b;
+    color: #a2580b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.user-upsert button:hover{
+    background-color: #a2580b;
+    color: #fff;
+}
+@media only screen and (max-width : 768px) {
+    .user-upsert{
+        width: 90%;
+    }
+}

@@ -1,0 +1,15 @@
+<div class="all-users">
+  <a routerLink="/user/list" class="view-all">View all user</a>
+  <div class="form-container">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="user-upsert">
+      <input type="text" formControlName="firstName" placeholder="First Name" />
+      <input type="text" formControlName="lastName" placeholder="Last Name" />
+      <input type="text" formControlName="address" placeholder="Address" />
+      <input type="email" formControlName="email" placeholder="Email" />
+      <input type="text" formControlName="phone" placeholder="Phone" />
+      <button type="submit" [disabled]="userForm.invalid">Register New User</button>
+    </form>
+  </div>
+
+
+</div>

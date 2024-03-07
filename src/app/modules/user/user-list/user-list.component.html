@@ -1,0 +1,29 @@
+<div class="user-list" *ngIf="users && users.length > 0; else noRecords">
+  <a routerLink="/user/upsert" class="add-user-button">Add New User</a>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.firstName }} {{ user.lastName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>
+          <button (click)="editUser(user)"> <mat-icon>edit</mat-icon></button>
+          <button (click)="deleteUser(user.id)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<ng-template #noRecords>
+  <p>No records available.</p>
+</ng-template>
